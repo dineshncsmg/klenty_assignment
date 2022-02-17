@@ -1,0 +1,652 @@
+/* base font */
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+
+/*  Base Styles Starts */
+html{
+    font-size: 1.2vw;
+}
+
+h1,h2{
+    font-family: 'Paytone One', sans-serif;
+}
+h3,h4,h5{
+    font-family: 'Poppins';
+}
+h1,h2,h3,h4,h5{
+    font-size: 2.1rem;
+    color: #120155;
+    font-weight: 600;
+}
+
+p,a,li{
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #343434;
+  text-decoration: none;
+}
+a{
+  cursor: pointer;
+}
+.container{
+  width: 87%;
+  max-width: 100%;
+}
+img{
+    width: 100%;
+    object-fit: contain;
+}
+section{
+    padding: 3rem 0;
+    width: 100%;
+}
+
+@media(max-width:1024px){
+
+}
+@media(max-width:991px){
+    p,a,li{
+        font-size: 1.5rem;
+    }
+    h1,h2,h3,h4,h5{
+        font-size: 2.6rem;
+    }
+}
+@media(max-width:767px){
+    html{
+        font-size: 10px;
+    }
+    .container {
+        width: 96%;
+    }
+}
+/* Base Styles Ends*/
+
+
+/* ----------------------------- */
+/* Header section styles starts  */
+/* ----------------------------- */
+header{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    z-index: 9999;
+}
+header .container{
+    width: 97%;
+}
+header img{
+    width: 85%;
+}
+header .navbar-light .navbar-nav .nav-link {
+    color: #05034E;
+    font-size: .9rem;
+    font-weight: 600;
+    padding: .5rem .8rem;
+  }
+header .navbar-light .navbar-nav .nav-link:hover{
+    color: #5856CE;
+}
+header ul.buttons li a{
+    color: #05034E !important;
+    font-size: .9rem;
+    font-weight: 600;
+    padding: .5rem .8rem;
+}
+header ul.buttons li a:hover{
+    color: #5856CE !important;
+}
+header ul.buttons li a.button-1{
+    text-decoration: none;
+    font-size: .8rem;
+    color: #5856CE !important;
+    border: .1rem solid #5856CE;
+    padding: .4rem .7rem;
+    border-radius: .2rem;
+    text-transform: uppercase;
+    margin: 0 .4rem;
+}
+header ul.buttons li a.button-1:hover{
+    color: #fff !important;
+    background-color: #5856CE;
+    transition: 0.6s;
+}
+header ul.buttons li a.button-2{
+    text-decoration: none;
+    font-size: .8rem;
+    background-color:#5856CE;
+    color: #fff !important;
+    border-color: #5856CE;
+    border: .1rem solid #5856CE;
+    padding: .4rem .7rem;
+    border-radius: .2rem;
+    text-transform: uppercase;
+    margin: 0 .4rem;
+}
+header ul.buttons li a.button-2:hover{
+    color: #5856CE !important;
+    background-color:#fff;
+    transition: 0.6s;
+}
+@media(max-width:1024px){
+
+}
+@media(max-width:991px){
+    header .navbar-light .navbar-nav .nav-link {
+        font-size: 2.5rem;
+        margin: 2rem 0;
+    }
+    header .buttons{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 4rem 0;
+    }
+    header ul.buttons li a{
+        font-size: 2.3rem !important; 
+    }
+    header ul.buttons li a.button-1,
+    header ul.buttons li a.button-2 {
+        padding: 1rem;
+    }
+    header .collapse.show {
+        padding-top: 2rem;
+    }
+    header .navbar-light .navbar-toggler-icon {
+        background-size: 5rem;
+        width: 4rem;
+        height: 4rem;
+        background-repeat: no-repeat;
+    }
+    .navbar-light .navbar-toggler {
+        border-color: transparent;
+    }
+    .navbar-toggler:not(:disabled):not(.disabled) {
+        outline: none;
+    }
+    header img{
+        width: 90%;
+    }
+    header .navbar-toggler.closed .navbar-toggler-icon{
+        background-image:url(../images/close.png);
+        background-size: 2.8rem;
+    }
+}
+@media(max-width:767px){
+    header .navbar-light .navbar-toggler-icon {
+        background-size: 4rem;
+    }    
+    header .container {
+        width: 100%;
+        padding: 0 0.7rem;
+    }
+    header .navbar-light .navbar-nav .nav-link {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+    }
+    header ul.buttons li a {
+        font-size: 1.3rem !important;
+    }
+    header .navbar-toggler.closed .navbar-toggler-icon{
+        background-size: 2.6rem;
+    }
+}
+
+/* ----------------------------- */
+/* Header section styles ends  */
+/* ----------------------------- */
+
+
+
+/* ----------------------------- */
+/* Banner section styles starts  */
+/* ----------------------------- */
+.banner-section{
+    padding: 2rem 0 3rem 0;
+    position: relative;
+    margin-top: 5rem;
+}
+.banner-section .content{
+    position: absolute;
+    top: 4rem;
+}
+.banner-section .content h1{
+    font-size: 2.8rem;
+    color: #120155;
+    margin: 1rem 0;
+}
+
+.banner-section .content h1 span{
+    color: #5856CE;
+}
+.banner-section .content p{
+  color: #343434;
+}
+.banner-section .image{
+    text-align: right;
+}   
+.banner-section .image img{
+    width: 85%;
+}
+.banner-section .button{
+    margin-top: 2.5rem;
+}
+.button a{
+    text-decoration: none;
+    font-size: .8rem;
+    color: #fff;
+    background-color: #5856CE;
+    border: .1rem solid #5856CE;
+    padding: .5rem .6rem;
+    border-radius: .2rem;
+    font-weight: 500;
+}
+.button a:hover{
+    color: #5856CE;
+    background-color:#fff ;
+    transition: 0.6s;
+}
+
+
+@media(max-width:1024px){
+
+}
+@media(max-width:991px){
+    .banner-section .content h1{
+        font-size: 3rem;
+    }
+    .button a{
+        font-size: 1.8rem;
+    }
+}
+@media(max-width:767px){
+    .banner-section .content {
+        position: relative;
+        top: auto;
+        margin-top: 3rem;
+    }
+    .banner-section .content h1 {
+        font-size: 2.5rem;
+    }
+    .button a {
+        font-size: 1.5rem;
+    }
+    .banner-section .image{
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .banner-section .image img {
+        width: 100%;
+    }
+    
+}
+
+/* ----------------------------- */
+/* Banner section styles ends */
+/* ----------------------------- */
+
+
+
+
+/* ------------------------------------ */
+/* CRM Accleration section styles starts */
+/* ------------------------------------ */
+.crm-acceleration-section{
+    text-align: center;
+    background: linear-gradient(180deg, rgba(235, 246, 255, 0) -12.61%, #EBF6FF 50.78%, rgba(235, 246, 255, 0) 114.7%);
+}
+
+.crm-acceleration-section .heading h2{
+    text-align: center;
+}
+.crm-acceleration-section .heading p{
+    margin-top: 2rem;
+    font-size: .98rem;
+}
+.crm-acceleration-section .card {
+    text-align: left;
+    border-radius: 1rem;
+    box-shadow: .8rem .8rem 1.9rem rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    background-color: #fff;
+    min-height: 20.5rem;
+    margin: 1.2rem 0;
+}
+.crm-acceleration-section .card img{
+    width: 4rem;
+}
+.crm-acceleration-section .card h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.crm-acceleration-section .card p{
+   font-size: 1rem;
+   font-weight: 500;
+}
+
+.crm-acceleration-section .wrapper-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
+@media(max-width:1024px){
+
+}
+@media(max-width:991px){
+    .crm-acceleration-section .heading p{
+        margin-top: 2rem;
+        font-size: 1.6rem;
+    }
+    .crm-acceleration-section .card h3{
+        font-size: 1.5rem;
+    }
+    .crm-acceleration-section .card p{
+        font-size: 1.4rem;
+    }
+    .crm-acceleration-section .card {
+        min-height: 29rem;
+    }
+}
+@media(max-width:767px){
+    .crm-acceleration-section .card img {
+        width: 7rem;
+        margin: auto;
+    }
+    .crm-acceleration-section .card {
+        text-align: center;
+    }
+}
+
+/* ------------------------------------ */
+/* CRM Accleration section styles ends */
+/* ------------------------------------ */
+
+
+/* -------------------------------------------*/
+/* Accleration your CRM section styles starts */
+/* ------------------------------------------ */
+
+.acceleration-section{
+   text-align: center;
+}
+.acceleration-section .wrap-div{
+    margin-top: 7rem;
+}
+.acceleration-section h2{
+  margin: 2rem 0;
+}
+.acceleration-section h2 span{
+    color: #5856CE;
+}
+.acceleration-section .round-card{
+    margin: 0 .8rem;
+    padding: 3rem 1rem 4rem 1rem;
+    box-shadow: 1.8rem 1.8rem 4rem rgba(0, 0, 0, 0.12);
+}
+.acceleration-section .round-card.card-1{
+    background-color: #99D0FF;
+    border-radius: 1rem 6rem 1rem 1rem;
+}
+.acceleration-section .round-card.card-2{
+    background-color: #B499FF;
+    border-radius: 1.8rem 1.8rem 10rem 10rem;
+}
+.acceleration-section .round-card.card-3{
+    background-color: #FFCA99;
+    border-radius: 10rem 10rem 1.8rem 1.8rem;
+}
+.acceleration-section .round-card.card-4{
+    background-color: #99FFCE;
+    border-radius: 1rem 1rem 1rem 6rem;
+}
+.acceleration-section h3{
+    font-family: 'Paytone One', sans-serif;
+    font-size: 2.5rem;
+}
+.acceleration-section p{
+    color:#05034E;
+    font-size: 1.1rem;
+    margin: auto;
+    width: 87%;
+    margin-top: 1.5rem;
+}
+
+
+
+@media(max-width:1024px){
+
+}
+@media(max-width:991px){
+    .acceleration-section p{
+        font-size: 1.4rem;
+    }
+    .acceleration-section h3{
+        font-size: 2.8rem;
+    }
+}
+@media(max-width:767px){
+    .acceleration-section .wrap-div {
+        margin-top: 3rem;
+    }    
+    .acceleration-section .round-card {
+        background-color: #99D0FF;
+        border-radius: 1rem !important;
+        margin: 2rem 0 ;
+    }
+}
+
+/* -------------------------------------------*/
+/* Acceleration your CRM section styles ends */
+/* ------------------------------------------ */
+
+
+/* --------------------------------------*/
+/*   Our Customer section styles starts   */
+/* -------------------------------------- */
+
+.our-customer-section{
+  padding: 5rem 0;
+  position: relative;
+}
+
+.our-customer-section h2{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.our-customer-section .customer-slider{
+    width: 75%;
+    margin: auto;
+    margin-top: 5.5rem;
+    padding: 0 1rem;
+    margin-bottom: 5rem;
+}
+.our-customer-section .customer-slider .content{
+    margin-top: 6rem;
+}
+.our-customer-section .customer-slider .content p{
+    color:#120155;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+    min-height: 9rem;
+}
+.our-customer-section .customer-slider .content p:before{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-size: 6rem;
+    background-repeat: no-repeat;
+    background-image:url(../images/quote.png);
+    content: "";
+    left: -.8rem;
+    top: -6rem;
+}
+/* 
+.our-customer-section .cus-logo,
+.our-customer-section .customer{
+    margin-top: 2.5rem;
+} */
+.our-customer-section .cus-logo img{
+  width:92%;
+}
+.our-customer-section .cus-logo{
+    position: relative;
+}
+.our-customer-section .cus-col-1{
+  float: left;
+}
+.our-customer-section .cus-col-2{
+    float: right;
+}
+.our-customer-section .cus-logo:after{
+    position: absolute;
+    border-right: .1rem solid #202020;
+    width: 1rem;
+    height: 3.6rem;
+    content: "";
+    right: -.6rem;
+    top: 0;
+}
+.our-customer-section .customer p{
+  font-size: .9rem;
+  font-weight: bold;
+  margin-top: .4rem;
+}
+.our-customer-section .customer p span{
+    font-weight: 400;
+}
+.our-customer-section .customer-image{
+    width: 100%;
+}
+.our-customer-section .slide-arrow .rel-slide-icon img{
+    width: 1.3rem;
+}
+.our-customer-section .slide-arrow ul.rel-slide-icon{
+    text-align: center;
+    background-color: #EBF6FF;
+    border-radius: .8rem;
+    padding: .3rem;
+    width: 7rem;
+    margin: auto;
+}
+.our-customer-section .slide-arrow ul.rel-slide-icon li{
+    display: inline-block;
+    cursor: pointer;
+    margin: .5rem .5rem;
+    transform: scale(0.9); 
+}
+.our-customer-section .slide-arrow ul.rel-slide-icon li:hover{
+    transform: scale(1); 
+    opacity: .8;
+}
+
+@media(max-width:1024px){
+
+}
+@media(max-width:991px){
+    .our-customer-section .customer-slider{
+        width: 100%;
+        padding: 0 2rem;
+    }
+    .our-customer-section .slide-arrow ul.rel-slide-icon {
+        width: 9rem;
+    }
+    .our-customer-section .slide-arrow .rel-slide-icon img{
+        width: 2.3rem;
+    }
+    .our-customer-section .customer p {
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:767px){
+    .our-customer-section .cus-logo img {
+        width: 50%;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .our-customer-section .cus-logo:after {
+        display: none;
+    }
+    .our-customer-section .customer p {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 2rem 0;
+    }
+}
+
+/* --------------------------------------*/
+/*   Our Customer section styles ends   */
+/* -------------------------------------- */
+
+
+
+/* --------------------------------------*/
+/*   Automate section styles starts   */
+/* --------------------------------------*/
+.automate-section{
+    background-image: linear-gradient(97.04deg, #110055 51.44%, #110055 95.29%);
+    text-align: center;
+    padding: 4rem 0;
+    position: relative;
+    z-index: 1;
+}
+.automate-section:after{
+    position: absolute;
+    width: 15rem;
+    height: 9rem;
+    content: "";
+    background-image: linear-gradient(0deg, #13005F 0%, rgba(19, 0, 95, 0) 100%);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 8rem 8rem 0 0;
+    z-index: -1;
+}
+
+
+.automate-section h2{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 0;
+}
+.automate-section p{
+    color: #fff;
+    margin-top: 2rem;
+}
+.automate-section .button{
+   margin-top: 3rem;
+  
+}
+.automate-section .button a{
+   text-align: center;
+   text-transform: uppercase;
+}
+@media(max-width:1024px){
+
+}
+@media(max-width:991px){
+    .automate-section p {
+       font-size: 1.6rem;
+    }
+}
+@media(max-width:767px){
+    .automate-section .button a {
+        padding: 0.5rem 1.6rem;
+    }
+}
+
+
+/* --------------------------------------*/
+/*   Automate section styles ends   */
+/* --------------------------------------*/
